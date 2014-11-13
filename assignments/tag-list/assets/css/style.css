@@ -1,0 +1,37 @@
+.throbber {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/throbber.gif)
+}
+
+.container {
+	margin: 0 auto;
+	 width: 50%;
+}
+
+.tag-container {
+	
+	background-color: #ffc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    display: inline-block;
+    font-size: 11.844px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    padding: 4px 6px;
+    white-space: nowrap;	
+}
+
+.tag-label {
+  vertical-align:middle;
+  margin-right:5px;
+}
+
+.close {
+  float:none;
+  vertical-align:middle;
+}
+
+

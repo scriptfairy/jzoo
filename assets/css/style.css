@@ -1,0 +1,12 @@
+.throbber {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(/assets/images/throbber.gif);
+}
+
+.thumbnail .caption {
+	text-align: center;
+}
+
+

@@ -1,0 +1,24 @@
+.throbber {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/throbber.gif)
+}
+
+.is-done {
+	text-decoration: line-through;
+	color: #ccc
+}
+
+.main-container {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.delete-cell {
+	text-align: right;
+}
+
+.checkbox-cell {
+	width: 20px;
+}
