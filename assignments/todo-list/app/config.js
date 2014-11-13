@@ -3,10 +3,10 @@ requirejs.config({
 	'baseUrl': './app',
 		
     'paths': {
-    	'jquery': '/assignments/todo-list/bower_components/jquery/dist/jquery.min',
-    	'bootstrap': '/assignments/todo-list/bower_components/bootstrap/dist/js/bootstrap.min',
-    	'underscore': '/assignments/todo-list/bower_components/underscore/underscore-min',
-		'backbone': '/assignments/todo-list/bower_components/backbone/backbone'
+    	'jquery': '../bower_components/jquery/dist/jquery.min',
+    	'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap.min',
+    	'underscore': '../bower_components/underscore/underscore-min',
+		'backbone': '../bower_components/backbone/backbone'
     },
 
 	'shim': {
