@@ -4,3 +4,16 @@
 	height: 16px;
 	background-image: url(../images/throbber.gif)
 }
+
+.container .heading {
+	text-align:center;	
+}
+
+.container .panel {
+	max-width:400px;
+	margin:0 auto;
+}
+
+label {
+	font-weight:normal !important
+}

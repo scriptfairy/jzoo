@@ -5,9 +5,13 @@
 	background-image: url(../images/throbber.gif)
 }
 
-.container {
-	margin: 0 auto;
-	 width: 50%;
+.container .panel {
+	max-width:400px;
+	margin:0 auto;
+}
+
+.container .heading {
+	text-align:center;	
 }
 
 .tag-container {

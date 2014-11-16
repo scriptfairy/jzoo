@@ -14,11 +14,10 @@ define([
 	var Question = Backbone.Model.extend({
 		
 		defaults: {
-			
-			question: null,
-			options: null,
+			question: '',
+			options: [],
 			correctAnswer: null,
-			userAnswer: null
+			userAnswer: -1
 		}
 	});
 	
