@@ -4,7 +4,6 @@ define([
 	'jquery',
 	'underscore',
 	'backbone',
-	'bootstrap',
 	
 	// Views
 	'views/QuizApp'
@@ -12,7 +11,7 @@ define([
 ],
 function(
 		
-	$, _, Backbone, Bootstrap,
+	$, _, Backbone, 
 	QuizApp
 	
 ){

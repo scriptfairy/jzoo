@@ -4,14 +4,13 @@ define([
     	'jquery',
     	'underscore',
     	'backbone',
-    	'bootstrap',
     	
     	// Views
     	'views/TagListApp'
 ], 
 
 function(
-	$, _, Backbone, bootstrap,
+	$, _, Backbone, 
 	TagListApp
 
 ){
