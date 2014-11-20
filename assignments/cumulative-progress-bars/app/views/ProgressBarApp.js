@@ -7,7 +7,7 @@ define([
     
     
     // Template
-    'text!./progressBarApp.html',
+    'text!./ProgressBarApp.html',
     
     // Views
     'views/ProgressBar',
