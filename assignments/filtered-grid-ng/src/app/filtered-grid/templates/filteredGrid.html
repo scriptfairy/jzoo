@@ -1,0 +1,12 @@
+<ul class="nav nav-pills" style="margin-bottom:20px;">
+  <li ng-class="{active: isActive('')}"><a href="#/">All</a></li>
+  <li ng-class="{active: isActive('kittens')}"><a href="#/kittens">Kittens</a></li> 
+  <li ng-class="{active: isActive('puppies')}"><a href="#/puppies">Puppies</a></li> 
+  <li ng-class="{active: isActive('other')}"><a href="#/other">Other</a></li>
+</ul>
+
+<ul class="row list-group">
+  <li  class="col-md-3 list-group-item" ng-repeat="image in images" ng-show="gridController.isVisible(image)">
+    <img ng-src="assets/images/{{image.image}}">
+  </li>
+</ul>

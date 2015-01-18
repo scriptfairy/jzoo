@@ -1,0 +1,25 @@
+<div class="form-group">
+  <input type="text" class="form-control task-input" ng-model="newTodo" ng-keypress="todoListController.onNewTodoKeypress($event)">
+</div>
+
+<table class="table">
+  <tr ng-repeat="todo in todos" ng-class="todoListController.getRowClass(todo)">
+    
+    <td class="checkbox-cell">
+      <input type="checkbox" class="done-checkbox" ng-model="todo.isComplete">
+    </td>
+    
+    <td class="task-name-cell">
+      {{ todo.text }}
+    </td>
+    
+    <td class="delete-cell">
+      <a href="#" class="delete-link" ng-click="todoListController.onDeleteClick(todo)">Delete</a>
+    </td>
+    
+  </tr>
+</table>
+
+<p ng-show="todoListController.isTodoCollectionEmpty()">
+  There is nothing to do
+</p>

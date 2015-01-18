@@ -1,0 +1,39 @@
+<div>
+  <h4>Question {{ question.questionNumber }}</h4>
+</div>
+<hr>
+
+<p>{{ question.text }}</p>
+<ul class="list-unstyled">
+    <li ng-repeat="option in question.options">
+      <label>
+        <input type="radio" name="option" value="{{ $index }}" ng-model="question.userAnswer"> {{ option }}
+      </label>
+    </li>
+    <li>
+      <label>
+      <input type="radio" name="option" value="-1" ng-model="question.userAnswer"> I don't know
+      </label>
+    </li>
+</ul>
+
+<button class="btn btn-default btn-back" type="button" ng-show="!quiz.isOnFirstQuestion()" ng-click="questionController.goToPreviousQuestion()">
+  <span class="glyphicon glyphicon-chevron-left"></span> 
+  Previous
+</button>
+
+<div class="pull-right">
+
+  <button class="btn btn-default btn-next" type="button" ng-show="!quiz.isOnLastQuestion()" ng-click="questionController.goToNextQuestion()">
+    Next 
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </button>
+  
+  <button class="btn btn-default btn-finish" type="button" ng-show="quiz.isOnLastQuestion()" ng-click="questionController.goToResult()">
+    Finish 
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </button>
+
+</div>
+<div class="clearfix"></div>
+
