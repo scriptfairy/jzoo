@@ -1,0 +1,19 @@
+[
+  {
+    "name" : "Imagine",
+    "artist" : "John Lennon",
+    "duration" : 10
+  },
+  
+  {
+    "name" : "We are the Champions",
+    "artist" : "Queen",
+    "duration" : 6
+  },
+  
+  {
+    "name" : "Hey Jude",
+    "artist" : "The Beatles",
+    "duration" : 13
+  }
+]

@@ -1,0 +1,21 @@
+.throbber {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/throbber.gif)
+}
+
+header {
+	text-align:center;	
+}
+
+.container .panel {
+	max-width:800px;
+	margin:0 auto;
+}
+
+.main-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+

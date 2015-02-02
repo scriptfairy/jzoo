@@ -1,0 +1,85 @@
+<div class="four-steps-container">
+
+  <div class="row select-row">
+    <div class="col-md-3 step-one box" ng-class="signUpController.getStepClass('signup')">1<br>Sign up</div>
+    <div class="col-md-3 step-two box" ng-class="signUpController.getStepClass('pricing')">2<br>Pricing plan</div>
+    <div class="col-md-3 step-three box" ng-class="signUpController.getStepClass('payment')">3<br>Payment</div>
+    <div class="col-md-3 step-four box" ng-class="signUpController.getStepClass('complete')">4<br>Complete</div>
+  </div>
+
+</div>
+
+<div class="forms-container">
+
+  <div ng-show="{{ currentStep === 'signup' }}">
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Username" ng-model="signUpModel.username"> 
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Email" ng-model="signUpModel.email">
+  </div>
+
+  <div ng-show="{{ currentStep === 'pricing' }}">
+    <div class="row select-row">
+      <div class="col-md-4 box">
+        <div class="select-cell" ng-class="signUpController.getPlanClass('mini')" ng-click="signUpController.setPlan('mini')">Mini Plan</div>
+       </div>
+       
+      <div class="col-md-4 box">
+        <div class="select-cell" ng-class="signUpController.getPlanClass('standard')" ng-click="signUpController.setPlan('standard')">Standard Plan</div>
+      </div>
+      
+      <div class="col-md-4 box">
+        <div class="select-cell" ng-class="signUpController.getPlanClass('advanced')" ng-click="signUpController.setPlan('advanced')">Advanced Plan</div>
+      </div>
+      
+    </div>  
+  </div>
+
+  <div ng-show="{{ currentStep === 'payment' }}">
+    <div class="row select-row">
+      <div class="col-md-6 box">
+        <div class="select-cell" ng-class="signUpController.getPaymentClass('paypal')" ng-click="signUpController.setPayment('paypal')">PayPal</div>
+      </div>
+
+      <div class="col-md-6 box">
+        <div class="select-cell" ng-class="signUpController.getPaymentClass('creditcard')" ng-click="signUpController.setPayment('creditcard')">Credit Card</div>
+      </div>
+   
+    </div>  
+
+  </div>
+
+  <div ng-show="{{ currentStep === 'complete' }}">
+    <table class="table">
+      <tr>
+        <th>Username</th>
+        <td>{{ signUpModel.username }}</td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td>{{ signUpModel.email }}</td>
+      </tr>
+      <tr>
+        <th>Pricing Plan</th>
+        <td>{{ signUpModel.getPlan() }}</td>
+      </tr>
+      <tr>
+        <th>Payment</th>
+        <td>{{ signUpModel.getPayment() }}</td>
+      </tr>
+    </table>
+  </div>
+  
+</div>
+
+<button class="btn btn-default btn-back" type="button" ng-show="{{ currentStep !== 'signup' }}" ng-click="signUpController.goToPreviousStep()">
+  <span class="glyphicon glyphicon-chevron-left"></span> 
+  Previous
+</button>
+
+<div class="pull-right">
+
+  <button class="btn btn-default btn-next" type="button" ng-show="{{ currentStep !== 'complete' }}" ng-click="signUpController.goToNextStep()">
+    Next 
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </button>
+  
+</div>
