@@ -6,7 +6,7 @@ define([
     'backbone',
     
     // Template
-    'text!./SignUP.html'
+    'text!./SignUp.html'
     
 ], function(
 		
