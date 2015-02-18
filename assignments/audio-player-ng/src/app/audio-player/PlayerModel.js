@@ -91,7 +91,7 @@
         this.tracks.push(track);
       },
   
-      getTraclCount: function() {
+      getTrackCount: function() {
         
         return this.tracks.length;
       },

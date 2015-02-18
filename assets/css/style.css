@@ -9,4 +9,10 @@
 	text-align: center;
 }
 
+.assignment-list li {
+	display: inline-block;
+	width: 210px;
+	vertical-align: top;
+	margin-right: 20px;
+}
 
