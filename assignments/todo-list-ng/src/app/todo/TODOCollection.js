@@ -9,8 +9,8 @@
   TODOCollection.$inject = ['$collection'];
   
   function TODOCollection($collection){
-    var TODOCollection = $collection.getInstance();
-    return TODOCollection;
+    var instance = $collection.getInstance();
+    return instance;
   }
   
 })();

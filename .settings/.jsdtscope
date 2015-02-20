@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="assignments/audio-player-ng/|assignments/cumulative-progress-bars/bower_components/|assignments/filtered-grid-ng/|assignments/multi-choice-quiz-ng/src/bower_components/|assignments/multi-choice-quiz/bower_components/|assignments/sign-up-process-ng/|assignments/sign-up-process/bower_components/|assignments/skeleton-ng/src/bower_components/|assignments/tag-list/bower_components/|assignments/todo-list-ng/src/bower_components/|assignments/todo-list/bower_components/|bower_components/" kind="src" path=""/>
+	<classpathentry excluding="assignments/audio-player-ng/|assignments/cumulative-progress-bars/bower_components/|assignments/filtered-grid-ng/|assignments/multi-choice-quiz-ng/src/bower_components/|assignments/multi-choice-quiz/bower_components/|assignments/sign-up-process-ng/|assignments/sign-up-process/bower_components/|assignments/skeleton-ng/src/bower_components/|assignments/tag-list-ng/|assignments/tag-list/bower_components/|assignments/todo-list-ng/src/bower_components/|assignments/todo-list/bower_components/|bower_components/" kind="src" path=""/>
 	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
