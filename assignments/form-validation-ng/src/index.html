@@ -2,7 +2,7 @@
 <html ng-app="app">
 <head>
 
-  <title>Tag List - AngularJS</title>
+  <title>Form Validation - AngularJS</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +10,19 @@
 
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="assets/css/style.css">
   
 </head>
 <body>
 
   <div class="container">
   
-	<div class="heading">
-		<h1>Tag List App</h1>
+	<header>
+		<h1>Simple Form Validation</h1>
         <p>
-        	View <a href="https://github.com/scriptfairy/jzoo/tree/gh-pages/assignments/tag-list-ng/src">source code on GitHub</a><br>
-          	Solution for <a href="http://www.webcode.com.au/assignments/js/tag-list//">Tag List</a>
+        	View <a href="https://github.com/scriptfairy/jzoo/tree/gh-pages/assignments/form-validation-ng">source code on GitHub</a><br>
         </p>
-
-	</div>
+    
+	</header>
   
 	<div class="panel panel-default main-container">
 		<div class="panel-body" ui-view>
@@ -36,14 +34,11 @@
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-  <script src="bower_components/angular-collection/angular-collection.js"></script>
+  <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
   
-  <script src="app/taglist/TaglistModule.js"></script>
-  <script src="app/taglist/TaglistRoutes.js"></script>
-  <script src="app/taglist/TaglistCollection.js"></script>
-  <script src="app/taglist/TaglistResource.js"></script>
-  <script src="app/taglist/TaglistService.js"></script>
-  <script src="app/taglist/TaglistController.js"></script>
+  <script src="app/form-valid/FormValidationModule.js"></script>
+  <script src="app/form-valid/FormValidationRoutes.js"></script>
+  <script src="app/form-valid/FormValidationController.js"></script>
   <script src="app/app.js"></script>
 
 </body>
