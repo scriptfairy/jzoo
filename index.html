@@ -53,6 +53,110 @@
 	</p>
 </div>
 
+<section class="quiz">
+
+	<div class="container">
+
+		<h2>
+			<img src="/assets/images/js-small.png">
+			JavaScript Quiz
+		</h2>
+		
+		<div class="questions-container">
+		
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					What is a closure?
+					<button class="btn btn-small pull-right" ng-click="showAnswer1 = !showAnswer1">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer1,
+																						'glyphicon-chevron-down': showAnswer1}"></i>
+						{{ showAnswer1? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer1">
+					<p>
+						A closure is an inner function that has access to the outer
+						function's variables
+					<p>
+				</div>
+			</div>
+		
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					What is the difference between == and ===?
+					<button class="btn btn-small pull-right" ng-click="showAnswer2 = !showAnswer2">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer2,
+																						'glyphicon-chevron-down': showAnswer2}"></i>
+						{{ showAnswer2? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer2">
+					<p>
+						When a comparison is made using the double-equals operator, it will check 
+						the values of both expressions and convert them to a common 
+						type and return true if both are equal.
+						So comparing a number with a string having the same value will return true.
+					</p>
+					<p>
+						The triple-equals operator, also called <b>strict equals</b> or <b>identically equal</b> never does 
+						type converting. Instead it will compare the value and the type.
+						So comparing a number with a string having the same value will return false.
+					</p>
+				</div>
+			</div>
+		
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					Describe how promises are used in JavaScript
+					<button class="btn btn-small pull-right" ng-click="showAnswer3 = !showAnswer3">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer3,
+																						'glyphicon-chevron-down': showAnswer3}"></i>
+						{{ showAnswer3? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer3">
+					<p>
+						JavaScript is single threaded so it is largely synchronous
+						(blocking) but there are also asynchronous (non blocking)
+						operations such as AJAX calls and events.
+					</p>
+					<p>
+						Promises are objects that represent the value of a long
+						running operation and provide an API for handling 
+						that value when it arrives.
+					</p>
+					<p>
+						A promise can be:
+						<ul>
+							<li>Fulfilled - The action relating to the promise succeeded.</li>
+							<li>Rejected - The action relating to the promise failed.</li> 
+							<li>Pending - Hasn't fulfilled or rejected yet.</li> 
+							<li>Settled - Has fulfilled or rejected.</li>					
+						</ul>
+					</p>
+					<p>
+						This <a href="http://andyshora.com/promises-angularjs-explained-as-cartoon.html" target="_blank">blog article</a> 
+						explains the meaning of a promise in AngularJS in a very simple way.
+					</p>
+				</div>
+			</div>
+		
+			
+		
+		
+		
+		
+		</div>
+
+	</div>
+	
+</section>
 
 <section class="examples examples-ng">
 
@@ -160,21 +264,6 @@
 	                using AngularJS and Bootstrap
 	              </p>
 	            </div>
-	          </div>
-	        </li>
-	
-	        <li>
-	          <div class="thumbnail">
-					<a href="assignments/cumulative-progress-bars-ng/src">
-						<img src="assets/images/progressbars.png" class="img-responsive">
-					</a>
-					<div class="caption">
-						<h3>Cumulative Progress Bars</h3>
-						<p>
-							A simple cumulative progress bar exercise<br>
-							using AngularJS and Bootstrap
-						</p>
-					</div>
 	          </div>
 	        </li>
 	

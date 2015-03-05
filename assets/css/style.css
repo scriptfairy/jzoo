@@ -37,10 +37,6 @@ header h1 {
 	color: darkred;
 }
 
-header h1 a {
-	text-decoration: none;
-}
-
 header h2 {
 	font-family: 'Lobster', cursive;
 	font-size: 28px;
@@ -112,7 +108,7 @@ section h2 {
 }
 
 .question-container a {
-	color: black;
+	color: deeppink;
 }
 
 .question-container .question {
