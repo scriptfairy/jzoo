@@ -1,0 +1,21 @@
+<div>
+	
+	<button type="button" class="btn btn-primary" ng-click="moviePublisherController.publish()" ng-disabled="isProcessing">
+		<i class="glyphicon glyphicon-upload"></i>
+		Publish
+	</button>
+	<span class="text-warning" ng-show="processingStarted">Publishing {{ processedCount }} of {{ movies.length }}</span>
+	<span class="text-success" ng-show="processingFinished">Publishing Complete</span>
+</div>
+
+<table class="table table-bordered table-movies">
+	<tbody>
+		<tr  ng-repeat="movie in movies">
+			<td>{{ movie.name }}</td>
+			<td>{{ movie.year }}</td>
+			<td ng-class="{'text-success': movie.status === 'Done',
+										 'text-info': !movie.status,
+										 'text-warning': movie.status === 'Publishing'}">{{ movie.status || 'Pending' }}</td>
+		</tr>
+	</tbody>
+</table>
