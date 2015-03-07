@@ -16,8 +16,6 @@
   
   function MoviePublisherRoutes($stateProvider){
     
-    // Create an abstract parent state 'app' to load the images
-    // Then the 'app.grid' state to handle the view
     $stateProvider
       .state('app',{
         abstract: true,
