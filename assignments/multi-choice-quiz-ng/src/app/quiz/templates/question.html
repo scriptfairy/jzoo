@@ -17,10 +17,12 @@
     </li>
 </ul>
 
-<button class="btn btn-default btn-back" type="button" ng-show="!quiz.isOnFirstQuestion()" ng-click="questionController.goToPreviousQuestion()">
-  <span class="glyphicon glyphicon-chevron-left"></span> 
-  Previous
-</button>
+<div class="pull-left">
+	<button class="btn btn-default btn-back" type="button" ng-show="!quiz.isOnFirstQuestion()" ng-click="questionController.goToPreviousQuestion()">
+	  <span class="glyphicon glyphicon-chevron-left"></span> 
+	  Previous
+	</button>
+</div>
 
 <div class="pull-right">
 
