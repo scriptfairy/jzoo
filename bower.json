@@ -1,7 +1,5 @@
 {
-  "name": "todo-list",
-  "version": "0.0.0",
-  "license": "MIT",
+  "name": "jzoo",
   "private": true,
   "ignore": [
     "**/.*",

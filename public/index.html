@@ -23,7 +23,7 @@
 </head>
 
 <body ng-controller="MainController">
-	
+
 <header>
 	<img src="/assets/images/js-small.png">
 	<h1>
@@ -37,7 +37,7 @@
 <div class="info-panel">
 	<p>
 		Hi, I'm a <b>JavaScript developer</b> based in Sydney,
-		available for freelance or contract work.
+		available for freelance or contract work. Available for remote work also.
 	</p>
 	<p>
 		<span class="tag">Backbone.js</span>
@@ -61,15 +61,15 @@
 			<img src="/assets/images/js-small.png">
 			JavaScript Quiz
 		</h2>
-		
+
 		<div class="questions-container">
-		
+
 			<div class="question-container">
 				<div class="question">
 					<i class="glyphicon glyphicon-chevron-right"></i>
 					What is a closure?
 					<button class="btn btn-small pull-right" ng-click="showAnswer1 = !showAnswer1">
-					
+
 						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer1,
 																						'glyphicon-chevron-down': showAnswer1}"></i>
 						{{ showAnswer1? 'Hide Answer' : 'Show Answer' }}
@@ -82,13 +82,13 @@
 					<p>
 				</div>
 			</div>
-		
+
 			<div class="question-container">
 				<div class="question">
 					<i class="glyphicon glyphicon-chevron-right"></i>
 					What is the difference between == and ===?
 					<button class="btn btn-small pull-right" ng-click="showAnswer2 = !showAnswer2">
-					
+
 						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer2,
 																						'glyphicon-chevron-down': showAnswer2}"></i>
 						{{ showAnswer2? 'Hide Answer' : 'Show Answer' }}
@@ -96,25 +96,25 @@
 				</div>
 				<div class="answer" ng-show="showAnswer2">
 					<p>
-						When a comparison is made using the double-equals operator, it will check 
-						the values of both expressions and convert them to a common 
+						When a comparison is made using the double-equals operator, it will check
+						the values of both expressions and convert them to a common
 						type and return true if both are equal.
 						So comparing a number with a string having the same value will return true.
 					</p>
 					<p>
-						The triple-equals operator, also called <b>strict equals</b> or <b>identically equal</b> never does 
+						The triple-equals operator, also called <b>strict equals</b> or <b>identically equal</b> never does
 						type converting. Instead it will compare the value and the type.
 						So comparing a number with a string having the same value will return false.
 					</p>
 				</div>
 			</div>
-		
+
 			<div class="question-container">
 				<div class="question">
 					<i class="glyphicon glyphicon-chevron-right"></i>
 					Describe how promises are used in JavaScript
 					<button class="btn btn-small pull-right" ng-click="showAnswer3 = !showAnswer3">
-					
+
 						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer3,
 																						'glyphicon-chevron-down': showAnswer3}"></i>
 						{{ showAnswer3? 'Hide Answer' : 'Show Answer' }}
@@ -128,31 +128,31 @@
 					</p>
 					<p>
 						Promises are objects that represent the value of a long
-						running operation and provide an API for handling 
+						running operation and provide an API for handling
 						that value when it arrives.
 					</p>
 					<p>
 						A promise can be:
 						<ul>
 							<li>Fulfilled - The action relating to the promise succeeded.</li>
-							<li>Rejected - The action relating to the promise failed.</li> 
-							<li>Pending - Hasn't fulfilled or rejected yet.</li> 
-							<li>Settled - Has fulfilled or rejected.</li>					
+							<li>Rejected - The action relating to the promise failed.</li>
+							<li>Pending - Hasn't fulfilled or rejected yet.</li>
+							<li>Settled - Has fulfilled or rejected.</li>
 						</ul>
 					</p>
 					<p>
-						This <a href="http://andyshora.com/promises-angularjs-explained-as-cartoon.html" target="_blank">blog article</a> 
+						This <a href="http://andyshora.com/promises-angularjs-explained-as-cartoon.html" target="_blank">blog article</a>
 						explains the meaning of a promise in AngularJS in a very simple way.
 					</p>
 				</div>
 			</div>
-			<!--  		
+			<!--
 			<div class="question-container">
 				<div class="question">
 					<i class="glyphicon glyphicon-chevron-right"></i>
 					Describe the Module Pattern in JavaScript
 					<button class="btn btn-small pull-right" ng-click="showAnswer4 = !showAnswer4">
-					
+
 						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer4,
 																						'glyphicon-chevron-down': showAnswer4}"></i>
 						{{ showAnswer4? 'Hide Answer' : 'Show Answer' }}
@@ -168,7 +168,7 @@
 					<i class="glyphicon glyphicon-chevron-right"></i>
 					Explain how prototype inheritence works
 					<button class="btn btn-small pull-right" ng-click="showAnswer5 = !showAnswer5">
-					
+
 						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer5,
 																						'glyphicon-chevron-down': showAnswer5}"></i>
 						{{ showAnswer5? 'Hide Answer' : 'Show Answer' }}
@@ -184,7 +184,7 @@
 					<i class="glyphicon glyphicon-chevron-right"></i>
 					What does 'use strict' means?
 					<button class="btn btn-small pull-right" ng-click="showAnswer6 = !showAnswer6">
-					
+
 						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer6,
 																						'glyphicon-chevron-down': showAnswer6}"></i>
 						{{ showAnswer6? 'Hide Answer' : 'Show Answer' }}
@@ -200,7 +200,7 @@
 					<i class="glyphicon glyphicon-chevron-right"></i>
 					What is Variable Hoistings in JavaScript?
 					<button class="btn btn-small pull-right" ng-click="showAnswer7 = !showAnswer7">
-					
+
 						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer7,
 																						'glyphicon-chevron-down': showAnswer7}"></i>
 						{{ showAnswer7? 'Hide Answer' : 'Show Answer' }}
@@ -211,24 +211,24 @@
 				</div>
 			</div>
 			-->
-		
+
 		</div>
 
 	</div>
-	
+
 </section>
 
 <section class="examples examples-ng">
 
 	<div class="container">
-		
+
 		<h2>
 			<img src="/assets/images/angular.png">
 			AngularJS Examples
 		</h2>
-		
+
 		<ul class="assignment-list">
-	  	
+
 	  	<li>
 				<div class="thumbnail">
 				  <a href="assignments/movie-publisher-ng/src">
@@ -246,7 +246,7 @@
 				  <div class="caption"><h3>TODO List</h3><p>TODO List exercise<br>using AngularJS and Bootstrap</p></div>
 				</div>
 			</li>
-	
+
 			<li>
 				<div class="thumbnail">
 					<a href="assignments/tag-list-ng/src">
@@ -261,7 +261,7 @@
 					</div>
 				</div>
 			</li>
-	
+
        <li>
          <div class="thumbnail">
            <a href="assignments/multi-choice-quiz-ng/src">
@@ -276,7 +276,7 @@
            </div>
          </div>
        </li>
-	
+
        <li>
          <div class="thumbnail">
            <a href="assignments/sign-up-process-ng/src">
@@ -291,7 +291,7 @@
            </div>
          </div>
        </li>
-		
+
        <li>
          <div class="thumbnail">
            <a href="assignments/audio-player-ng/src">
@@ -306,7 +306,7 @@
            </div>
          </div>
        </li>
-		
+
        <li>
          <div class="thumbnail">
            <a href="assignments/filtered-grid-ng/src">
@@ -321,7 +321,7 @@
            </div>
          </div>
        </li>
-	
+
        <li>
          <div class="thumbnail">
            <a href="assignments/form-validation-ng/src">
@@ -336,7 +336,7 @@
            </div>
          </div>
        </li>
-	
+
        <li>
          <div class="thumbnail">
 					<a href="assignments/cumulative-progress-bars-ng/src">
@@ -351,7 +351,7 @@
 					</div>
          </div>
        </li>
-	
+
        <li>
          <div class="thumbnail">
 					<a href="assignments/jzoo-chart-ng/src">
@@ -367,7 +367,7 @@
        </li>
 
 		</ul>
-	
+
 	</div>
 
 </section>
@@ -379,9 +379,9 @@
 			<img src="/assets/images/backbone.png">
 			Backbone.js Examples
 		</h2>
-	
+
 		<ul class="assignment-list">
-	
+
 			<li>
 				<div class="thumbnail">
 					<a href="assignments/todo-list">
@@ -396,7 +396,7 @@
 					</div>
 				</div>
 			</li>
-	
+
 			<li>
 				<div class="thumbnail">
 					<a href="assignments/tag-list">
@@ -411,7 +411,7 @@
 					</div>
 				</div>
 			</li>
-	
+
 			<li>
 				<div class="thumbnail">
 					<a href="assignments/multi-choice-quiz">
@@ -426,7 +426,7 @@
 					</div>
 				</div>
 			</li>
-	
+
 			<li>
 				<div class="thumbnail">
 					<a href="assignments/sign-up-process">
@@ -441,7 +441,7 @@
 					</div>
 				</div>
 			</li>
-	
+
 			<li>
 				<div class="thumbnail">
 					<a href="assignments/cumulative-progress-bars">
@@ -456,9 +456,9 @@
 					</div>
 				</div>
 			</li>
-	
+
 		</ul>
-	
+
 	</div>
 
 </section>
@@ -487,14 +487,14 @@
 					</div>
          </div>
        </li>
-		
+
 		</ul>
 	</div>
-	
+
 </section>
 
 <footer>
-	
+
 </footer>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
