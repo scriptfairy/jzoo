@@ -1,0 +1,172 @@
+/*******************************************************************************
+*
+* Imports
+*
+*******************************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/*******************************************************************************
+*
+* Global
+*
+*******************************************************************************/
+
+body {
+	background-color: cornsilk;
+}
+
+/*******************************************************************************
+*
+* Header
+*
+*******************************************************************************/
+
+header {
+	text-align: center;
+	background-color: pink;
+	background-image: url(/assets/images/clouds-pink.png);
+	padding: 1em;
+	border-bottom: 2px solid hotpink;
+}
+
+header h1 {
+	font-family: 'Lobster', cursive;
+	margin: 0;
+	font-size: 48px;
+	color: darkred;
+}
+
+header h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+/*******************************************************************************
+*
+* Info
+*
+*******************************************************************************/
+
+.info-panel {
+	text-align: center;
+	padding: 2em 1em 1em 1em;
+	border-bottom: 2px solid white;
+	background-color: blanchedalmond;
+}
+
+.info-panel label {
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	font-weight: normal;
+	margin-right: 0.2em;
+}
+
+.info-panel .tag {
+	background-color: pink;
+	border: 2px solid white;
+	border-radius: 8px;
+	color: darkred;
+	display: inline-block;
+	margin-bottom: 8px;
+	margin-right: 4px;
+	padding: 6px 8px;
+	white-space: nowrap;	
+}
+
+.info-panel a {
+	color: darkred;
+}
+
+/*******************************************************************************
+*
+* Sections
+*
+*******************************************************************************/
+
+section h2 {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	margin: 1em;
+}
+
+
+/*******************************************************************************
+*
+* Questions
+*
+*******************************************************************************/
+
+.questions-container {
+	background-color: white;
+	padding: 2em;
+	border-radius: 1em;
+}
+
+.question-container {
+}
+
+.question-container a {
+	color: deeppink;
+}
+
+.question-container .question {
+	font-weight: bold;
+	font-size: 18px;
+	padding: 1em;
+}
+
+.question-container .question:hover {
+	background-color: #f7f7f7;
+}
+
+.question-container .question i {
+		color: pink;
+}
+
+.question-container .answer {
+	border-left: 8px solid #eee;
+	padding: 1em;
+	margin: 1em;
+	padding-left: 1em;
+}
+
+
+
+/*******************************************************************************
+*
+* Assignment List
+*
+*******************************************************************************/
+
+.assignment-list li {
+	display: inline-block;
+	width: 210px;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+.thumbnail .caption {
+	text-align: center;
+}
+
+/*******************************************************************************
+*
+* examples-backbone
+*
+*******************************************************************************/
+
+.examples-backbone {
+	background-color: blanchedalmond;
+}
+
+/*******************************************************************************
+*
+* footer
+*
+*******************************************************************************/
+footer {
+	
+	padding: 1em;
+}

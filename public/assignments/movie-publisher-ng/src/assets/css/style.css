@@ -1,0 +1,20 @@
+.throbber {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/throbber.gif)
+}
+
+.container .heading {
+	text-align:center;	
+}
+
+.container .panel {
+	margin:0 auto;
+}
+
+.table-movies {
+	margin-top: 20px;
+}
+
+

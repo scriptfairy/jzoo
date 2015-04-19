@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+
+  <title>Horizontal Charts Directive - AngularJS</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+  
+	<div class="heading">
+		<h1>Very Simple Horizontal Charts AngularJS Custom Directive</h1>
+   	View <a href="https://github.com/scriptfairy/jzoo/tree/gh-pages/assignments/jzoo-chart-ng/src" target="_blank">source code on GitHub</a><br>
+	</div>
+  
+	<div class="panel panel-default main-container">
+		<div class="panel-body" ui-view>
+			<span class="throbber"></span>
+		</div>
+	</div>
+  
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    
+  <script src="app/chart/ChartModule.js"></script>
+  <script src="app/chart/ChartRoutes.js"></script>
+  <script src="app/chart/JZOOChart.directive.js"></script>
+  <script src="app/chart/ChartController.js"></script>
+  <script src="app/app.js"></script>
+
+</body>
+</html>
+

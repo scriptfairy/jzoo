@@ -1,0 +1,94 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Please fill in the form</h2>
+		 </div>
+		 
+		  <div class="col-sm-6">
+		  
+			<form class="form" name="form" ng-submit="join(form)" novalidate>
+				
+				<div class="form-group" ng-class="{ 'has-error': form.email.$invalid && form.email.$dirty}">
+					<label>Email Address</label>
+					<input 
+						type="email" 
+						name="email" 
+						class="form-control" 
+						ng-model="user.email" 
+						placeholder="Enter Email" 
+						required>
+					
+					<p class="help-block" ng-show="form.email.$error.required">
+            			Email is required
+          			</p>
+          			
+          			<p class="help-block" ng-show="form.email.$error.email">
+            			Doesn't look like a valid email.
+          			</p>
+          					
+				</div>
+				
+				<div class="form-group" ng-class="{ 'has-error': form.password.$invalid && form.password.$dirty }">
+					<label>Password</label>
+					
+					<input
+						type="password" 
+						name="password" 
+						class="form-control" 
+						ng-model="user.password" 
+						placeholder="Enter Password" 
+						required 
+						ng-minlength="3">
+
+					<p class="help-block"
+			             ng-show="(form.password.$error.minlength || form.password.$error.required) && form.password.$dirty">
+			            Password must be at least 3 characters.
+			        </p>
+			        
+				</div>
+		
+				<div class="form-group" ng-class="{ 'has-error': form.confirmPassword.$invalid && form.confirmPassword.$dirty }">
+					
+					<label>Confirm Password</label>
+					<input
+						type="password" 
+						name="confirmPassword" 
+						class="form-control" 
+						ng-model="user.confirmPassword" 
+						placeholder="Confirm Password"
+						ui-validate=" '$value==user.password' " 
+						ui-validate-watch=" 'password' "
+						required>
+
+					<p class="help-block" ng-show="form.confirmPassword.$error.validator">
+			            Confirm Password must be same as Password.
+			        </p>
+
+				</div>
+				
+				<div class="form-group" ng-class="{ 'has-error': form.fullName.$invalid && form.fullName.$dirty }">
+					<label>Full Name</label>
+					<input 
+						type="text" 
+						name="fullName" 
+						class="form-control" 
+						ng-model="user.fullName" 
+						placeholder="Enter Full Name" 
+						required>
+
+					<p class="help-block"
+			             ng-show="form.fullName.$error.required && form.fullName.$dirty">
+			            Full Name is Required
+			        </p>
+
+				</div>
+		
+		        <div>
+		          <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+		        </div>
+				
+			</form>
+		</div>
+	</div>
+</div>

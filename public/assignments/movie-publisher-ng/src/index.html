@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+
+  <title>Movie Publisher - AngularJS</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+  
+	<div class="heading">
+		<h1>Movie Publisher</h1>
+      <p>
+      	View <a href="https://github.com/scriptfairy/jzoo/tree/gh-pages/assignments/movie-publisher-ng/src" target="_blank">source code on GitHub</a><br>
+        Solution for <a href="http://www.webcode.com.au/assignments/js/movie-publisher/" target="_blank">Movie Publisher</a>
+      </p>
+	</div>
+  
+	<div class="panel panel-default main-container">
+		<div class="panel-body" ui-view>
+			<span class="throbber"></span>
+		</div>
+	</div>
+  
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-collection/angular-collection.js"></script>
+  
+  <script src="app/moviepublisher/MoviePublisherModule.js"></script>
+  <script src="app/moviepublisher/MoviePublisherResource.js"></script>
+  <script src="app/moviepublisher/MoviePublisherRoutes.js"></script>
+  <script src="app/moviepublisher/MoviePublisherController.js"></script>
+  <script src="app/app.js"></script>
+
+</body>
+</html>
+

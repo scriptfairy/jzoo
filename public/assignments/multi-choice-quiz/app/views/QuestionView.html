@@ -1,0 +1,26 @@
+<%
+	var question =  quiz.getCurrentQuestion();
+	var optionsArr = question.get('options'); 
+%>
+
+<div class="multi-choice-quiz-title">
+	<h4>Question <%= quiz.getCurrentQuestionNumber() %> of <%= quiz.getTotalQuestions() %></h4>
+</div>
+<hr>
+
+<p class="question-container"><%= question.get('question') %></p>
+<ul class="list-unstyled question-answers">
+	<% for(var i=0;i<optionsArr.length;i++) { %>
+		<li>
+			<label>
+				<input type="radio" name="option" value="<%= i %>"> <%= optionsArr[i] %>
+			</label>
+		</li>
+	<% } %>
+	<li>
+		<label>
+		<input type="radio" name="option" value="-1"> I don't know
+		</label>
+	</li>
+</ul>
+

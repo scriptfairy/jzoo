@@ -1,0 +1,14 @@
+.container .heading {
+	text-align:center;	
+}
+
+.main {
+	max-width:800px;
+	margin: 0 auto;
+	border: 1px solid #eee;
+	padding: 20px;
+}
+
+.welcome {
+	text-align: center;	
+}

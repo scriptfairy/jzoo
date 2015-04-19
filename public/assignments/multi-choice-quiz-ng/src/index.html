@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-strict-di>
+<head>
+
+  <title>Multi Choice Quiz - AngularJS</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+	<div class="heading">
+	
+		<h1>Multi Choice Quiz</h1>
+	
+		<p>
+			View <a href="https://github.com/scriptfairy/jzoo/tree/gh-pages/assignments/multi-choice-quiz-ng">source code on GitHub</a><br>
+			Solution for <a href="http://www.webcode.com.au/assignments/js/multiple-choice-quiz/">Multiple Choice Quiz Assignment</a>
+		</p>
+
+	</div>
+  
+    <div ui-view class="main"></div>
+  
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-collection/angular-collection.js"></script>
+
+  <script src="app/quiz/QuizModule.js"></script>
+  <script src="app/quiz/Quiz.js"></script>
+  <script src="app/quiz/QuizResource.js"></script>
+  <script src="app/quiz/QuizService.js"></script>
+  <script src="app/quiz/QuizWelcomeController.js"></script>
+  <script src="app/quiz/QuizQuestionController.js"></script>
+  <script src="app/quiz/QuizResultController.js"></script>
+  <script src="app/quiz/QuizRoutes.js"></script>
+
+  <script src="app/app.js"></script>
+
+</body>
+</html>
+

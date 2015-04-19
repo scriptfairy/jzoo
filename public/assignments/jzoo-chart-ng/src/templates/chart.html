@@ -1,0 +1,9 @@
+<ul>
+	<li ng-repeat="bar in data">
+		<label>{{ bar.label }}</label>
+		<div class="chart">
+			<div id="data-one" class="bar" style="width: {{bar.value}}%">{{ bar.value }}%</div>
+		</div>
+		<div class="clearfix"></div>
+	</li>
+</ul>

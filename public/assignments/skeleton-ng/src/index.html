@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+
+  <title>Title goes here</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+  
+	<div class="heading">
+		<h1>Heading goes here</h1>
+	</div>
+  
+	<div class="panel panel-default main-container">
+		<div class="panel-body" ui-view>
+			<span class="throbber"></span>
+		</div>
+	</div>
+  
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<!--  
+  <script src="app/todo/TODOModule.js"></script>
+  <script src="app/todo/TODORoutes.js"></script>
+  <script src="app/todo/TODOCollection.js"></script>
+  <script src="app/todo/TODOResource.js"></script>
+  <script src="app/todo/TODOService.js"></script>
+  <script src="app/todo/TODOListController.js"></script>
+-->  
+  <script src="app/app.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+{
+  "name": "color-slider-angular",
+  "dependencies": {
+    "angular": "~1.3.8",
+    "bootstrap": "~3.3.1",
+    "angular-ui-router": "~0.2.13"
+  }
+}

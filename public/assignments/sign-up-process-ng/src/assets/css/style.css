@@ -1,0 +1,46 @@
+.throbber {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/throbber.gif)
+}
+
+body {
+	background-color: rgb(231,233,236);		
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.container .heading {
+	text-align:center;	
+}
+
+.container .panel {
+	max-width:600px;
+	margin:0 auto;
+	padding: 20px;
+}
+
+.four-steps-container {
+	margin-bottom:20px;
+}
+.four-steps-container .box{
+	text-align:center;
+	border : 1px solid #ccc;
+}
+
+.sign-up-form input{
+	margin: 20px 0;
+}
+
+.select-row .select-cell{
+	text-align:center;
+	border : 1px solid #ccc;
+	padding: 20px;
+	margin: 5px; 
+}
+
+.select-row .selected {
+	background-color: #eee;
+}
+
+

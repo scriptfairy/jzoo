@@ -1,0 +1,26 @@
+<div class="row">
+   
+   <div class="col-md-6">
+    <button type="button" class="btn btn-default" ng-show="playerModel.status === 'pause'" ng-click="playerController.updateModelStatus('play')">Play</button>
+    <button type="button" class="btn btn-default" ng-show="playerModel.status === 'play'" ng-click="playerController.updateModelStatus('pause')">Pause</button>
+    <button type="button" class="btn btn-default" ng-click="playerModel.moveBackword()">Prev</button>
+    <button type="button" class="btn btn-default" ng-click="playerModel.moveForward()">Next</button>
+   </div>
+   
+   <div class="col-md-5">
+
+    <div class="progress">
+      <div class="progress-bar" ng-style="{width : ( playerModel.percentage + '%' ) }"></div>
+    </div>
+
+   </div>
+
+   <div class="col-md-1">
+    {{ playerModel.durationFormatted }}
+  </div>
+
+</div>
+
+<div class="box">
+  <p>{{ playerModel.getCurrentTrack().name }} - {{ playerModel.getCurrentTrack().artist }} <span ng-show="playerModel.isPaused"> [Paused]</span></p>
+</div>

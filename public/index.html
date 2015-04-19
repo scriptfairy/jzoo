@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Christine Al-Thifairy - Freelance JavaScript Developer</title>
+
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body ng-controller="MainController">
+	
+<header>
+	<img src="/assets/images/js-small.png">
+	<h1>
+		Christine Al-Thifairy
+	</h1>
+	<h2>
+		Freelance JavaScript Developer
+	</h2>
+</header>
+
+<div class="info-panel">
+	<p>
+		Hi, I'm a <b>JavaScript developer</b> based in Sydney,
+		available for freelance or contract work.
+	</p>
+	<p>
+		<span class="tag">Backbone.js</span>
+		<span class="tag">AngularJS</span>
+		<span class="tag">jQuery</span>
+		<span class="tag">Bootstrap</span>
+		<span class="tag">HTML5</span>
+		<span class="tag">CSS3</span>
+	</p>
+	<p>
+		<label>Email</label>
+		<a href="mailto:chris@jzoo.com">chris@jzoo.com</a>
+	</p>
+</div>
+
+<section class="quiz">
+
+	<div class="container">
+
+		<h2>
+			<img src="/assets/images/js-small.png">
+			JavaScript Quiz
+		</h2>
+		
+		<div class="questions-container">
+		
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					What is a closure?
+					<button class="btn btn-small pull-right" ng-click="showAnswer1 = !showAnswer1">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer1,
+																						'glyphicon-chevron-down': showAnswer1}"></i>
+						{{ showAnswer1? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer1">
+					<p>
+						A closure is an inner function that has access to the outer
+						function's variables
+					<p>
+				</div>
+			</div>
+		
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					What is the difference between == and ===?
+					<button class="btn btn-small pull-right" ng-click="showAnswer2 = !showAnswer2">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer2,
+																						'glyphicon-chevron-down': showAnswer2}"></i>
+						{{ showAnswer2? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer2">
+					<p>
+						When a comparison is made using the double-equals operator, it will check 
+						the values of both expressions and convert them to a common 
+						type and return true if both are equal.
+						So comparing a number with a string having the same value will return true.
+					</p>
+					<p>
+						The triple-equals operator, also called <b>strict equals</b> or <b>identically equal</b> never does 
+						type converting. Instead it will compare the value and the type.
+						So comparing a number with a string having the same value will return false.
+					</p>
+				</div>
+			</div>
+		
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					Describe how promises are used in JavaScript
+					<button class="btn btn-small pull-right" ng-click="showAnswer3 = !showAnswer3">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer3,
+																						'glyphicon-chevron-down': showAnswer3}"></i>
+						{{ showAnswer3? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer3">
+					<p>
+						JavaScript is single threaded so it is largely synchronous
+						(blocking) but there are also asynchronous (non blocking)
+						operations such as AJAX calls and events.
+					</p>
+					<p>
+						Promises are objects that represent the value of a long
+						running operation and provide an API for handling 
+						that value when it arrives.
+					</p>
+					<p>
+						A promise can be:
+						<ul>
+							<li>Fulfilled - The action relating to the promise succeeded.</li>
+							<li>Rejected - The action relating to the promise failed.</li> 
+							<li>Pending - Hasn't fulfilled or rejected yet.</li> 
+							<li>Settled - Has fulfilled or rejected.</li>					
+						</ul>
+					</p>
+					<p>
+						This <a href="http://andyshora.com/promises-angularjs-explained-as-cartoon.html" target="_blank">blog article</a> 
+						explains the meaning of a promise in AngularJS in a very simple way.
+					</p>
+				</div>
+			</div>
+			<!--  		
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					Describe the Module Pattern in JavaScript
+					<button class="btn btn-small pull-right" ng-click="showAnswer4 = !showAnswer4">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer4,
+																						'glyphicon-chevron-down': showAnswer4}"></i>
+						{{ showAnswer4? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer4">
+					TODO
+				</div>
+			</div>
+
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					Explain how prototype inheritence works
+					<button class="btn btn-small pull-right" ng-click="showAnswer5 = !showAnswer5">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer5,
+																						'glyphicon-chevron-down': showAnswer5}"></i>
+						{{ showAnswer5? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer5">
+					TODO
+				</div>
+			</div>
+
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					What does 'use strict' means?
+					<button class="btn btn-small pull-right" ng-click="showAnswer6 = !showAnswer6">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer6,
+																						'glyphicon-chevron-down': showAnswer6}"></i>
+						{{ showAnswer6? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer6">
+					TODO
+				</div>
+			</div>
+
+			<div class="question-container">
+				<div class="question">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+					What is Variable Hoistings in JavaScript?
+					<button class="btn btn-small pull-right" ng-click="showAnswer7 = !showAnswer7">
+					
+						<i class="glyphicon " ng-class="{'glyphicon-chevron-right': !showAnswer7,
+																						'glyphicon-chevron-down': showAnswer7}"></i>
+						{{ showAnswer7? 'Hide Answer' : 'Show Answer' }}
+					</button>
+				</div>
+				<div class="answer" ng-show="showAnswer7">
+					TODO
+				</div>
+			</div>
+			-->
+		
+		</div>
+
+	</div>
+	
+</section>
+
+<section class="examples examples-ng">
+
+	<div class="container">
+		
+		<h2>
+			<img src="/assets/images/angular.png">
+			AngularJS Examples
+		</h2>
+		
+		<ul class="assignment-list">
+	  	
+	  	<li>
+				<div class="thumbnail">
+				  <a href="assignments/movie-publisher-ng/src">
+				  	<img src="assets/images/movie.png" class="img-responsive">
+				  </a>
+				  <div class="caption"><h3>Movie Publisher</h3><p>Synchronous AJAX calls exercise<br>using AngularJS and Bootstrap</p></div>
+				</div>
+			</li>
+
+	  	<li>
+				<div class="thumbnail">
+				  <a href="assignments/todo-list-ng/src">
+				  	<img src="assets/images/todo.png" class="img-responsive">
+				  </a>
+				  <div class="caption"><h3>TODO List</h3><p>TODO List exercise<br>using AngularJS and Bootstrap</p></div>
+				</div>
+			</li>
+	
+			<li>
+				<div class="thumbnail">
+					<a href="assignments/tag-list-ng/src">
+						<img src="assets/images/tag.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>Tag List</h3>
+						<p>
+							Tag List exercise<br>
+							using AngularJS and Bootstrap
+						</p>
+					</div>
+				</div>
+			</li>
+	
+       <li>
+         <div class="thumbnail">
+           <a href="assignments/multi-choice-quiz-ng/src">
+             <img src="assets/images/multichoicequiz.png" class="img-responsive">
+           </a>
+           <div class="caption">
+             <h3>Multi Choice Quiz</h3>
+             <p>
+               A multi choice quiz exercise<br>
+               using AngularJS and Bootstrap
+             </p>
+           </div>
+         </div>
+       </li>
+	
+       <li>
+         <div class="thumbnail">
+           <a href="assignments/sign-up-process-ng/src">
+             <img src="assets/images/signup.png" class="img-responsive">
+           </a>
+           <div class="caption">
+             <h3>Sign Up Process</h3>
+             <p>
+               A simple multi-step sign up process<br>
+               using AngularJS and Bootstrap
+             </p>
+           </div>
+         </div>
+       </li>
+		
+       <li>
+         <div class="thumbnail">
+           <a href="assignments/audio-player-ng/src">
+             <img src="assets/images/audio.png" class="img-responsive">
+           </a>
+           <div class="caption">
+             <h3>Audio Player</h3>
+             <p>
+               A mock audio player<br>
+               Using AngularJS and Bootstrap
+             </p>
+           </div>
+         </div>
+       </li>
+		
+       <li>
+         <div class="thumbnail">
+           <a href="assignments/filtered-grid-ng/src">
+             <img src="assets/images/filteredgrid.png" class="img-responsive">
+           </a>
+           <div class="caption">
+             <h3>Filtered Grid</h3>
+             <p>
+               A simple grid selectively filtered<br>
+               using AngularJS and Bootstrap
+             </p>
+           </div>
+         </div>
+       </li>
+	
+       <li>
+         <div class="thumbnail">
+           <a href="assignments/form-validation-ng/src">
+             <img src="assets/images/form.png" class="img-responsive">
+           </a>
+           <div class="caption">
+             <h3>AngularJS Form Validation</h3>
+             <p>
+							Simple Form Validation<br>
+               using AngularJS and Bootstrap
+             </p>
+           </div>
+         </div>
+       </li>
+	
+       <li>
+         <div class="thumbnail">
+					<a href="assignments/cumulative-progress-bars-ng/src">
+						<img src="assets/images/progressbars.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>Cumulative Progress Bars</h3>
+						<p>
+							A simple cumulative progress bar exercise<br>
+							using AngularJS and Bootstrap
+						</p>
+					</div>
+         </div>
+       </li>
+	
+       <li>
+         <div class="thumbnail">
+					<a href="assignments/jzoo-chart-ng/src">
+						<img src="assets/images/colorslider.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>AngularJS Custom Directive</h3>
+						<p>
+							A simple horizontal charts directive<br>
+						</p>
+					</div>
+         </div>
+       </li>
+
+		</ul>
+	
+	</div>
+
+</section>
+
+<section class="examples examples-backbone">
+
+	<div class="container">
+		<h2>
+			<img src="/assets/images/backbone.png">
+			Backbone.js Examples
+		</h2>
+	
+		<ul class="assignment-list">
+	
+			<li>
+				<div class="thumbnail">
+					<a href="assignments/todo-list">
+						<img src="assets/images/todo.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>TODO List</h3>
+						<p>
+							TODO List exercise<br>
+							usin Backbone.js and Bootstrap
+						</p>
+					</div>
+				</div>
+			</li>
+	
+			<li>
+				<div class="thumbnail">
+					<a href="assignments/tag-list">
+						<img src="assets/images/tag.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>Tag List</h3>
+						<p>
+							A simple Tag List application<br>
+							using Backbone.js and Bootstrap
+						</p>
+					</div>
+				</div>
+			</li>
+	
+			<li>
+				<div class="thumbnail">
+					<a href="assignments/multi-choice-quiz">
+						<img src="assets/images/multichoicequiz.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>Multi Choice Quiz</h3>
+						<p>
+							A multi choice quiz<br>
+							using Backbone.js and Bootstrap
+						</p>
+					</div>
+				</div>
+			</li>
+	
+			<li>
+				<div class="thumbnail">
+					<a href="assignments/sign-up-process">
+						<img src="assets/images/signup.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>Sign Up Process</h3>
+						<p>
+							A simple multi-step sign up process<br>
+							Backbone.js and Bootstrap
+						</p>
+					</div>
+				</div>
+			</li>
+	
+			<li>
+				<div class="thumbnail">
+					<a href="assignments/cumulative-progress-bars">
+						<img src="assets/images/progressbars.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>Cumulative Progress Bars</h3>
+						<p>
+							A simple cumulative progress bar exercise<br>
+							using Backbone.js and Bootstrap
+						</p>
+					</div>
+				</div>
+			</li>
+	
+		</ul>
+	
+	</div>
+
+</section>
+
+<section class="examples">
+
+	<div class="container">
+		<h2>
+			<img src="/assets/images/html5.png">
+			HTML5 Examples
+		</h2>
+
+		<ul class="assignment-list">
+
+       <li>
+         <div class="thumbnail">
+					<a href="assignments/color-slider-ng/src">
+						<img src="assets/images/colorslider.png" class="img-responsive">
+					</a>
+					<div class="caption">
+						<h3>Colour Slider</h3>
+						<p>
+							A simple colour slider exercise<br>
+							using AngularJS and HTML5
+						</p>
+					</div>
+         </div>
+       </li>
+		
+		</ul>
+	</div>
+	
+</section>
+
+<footer>
+	
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="app/app.js"></script>
+
+</body>
+
+</html>

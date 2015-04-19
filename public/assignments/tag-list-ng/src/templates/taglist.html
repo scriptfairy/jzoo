@@ -1,0 +1,19 @@
+
+<div class="form-group">
+	<input type="text" class="form-control tag-input-new" ng-model="newTag" ng-keypress="taglistController.onNewTagKeypress($event)">
+</div>
+
+<div class="tag-list-containder">
+
+	<div>
+		<div class="tag-container" ng-repeat="tag in tags">
+			<span class="tag-label">{{ tag.text }}</span>
+			<span class="close" ng-click="taglistController.onDeleteClick(tag)">&times;</span>
+		</div>
+	</div>
+
+</div>
+
+<p ng-show="taglistController.isTagCollectionEmpty()">
+  There is no tags to display
+</p>

@@ -1,0 +1,19 @@
+<div class="slider-container">
+	<input class="red" type="range" value="{{data.redValue}}" ng-model="data.redValue" min="0" max="255">
+</div>
+
+<output>{{ data.redValue }}</output>
+
+<div class="slider-container">
+	<input class="green" type="range" value="{{data.greenValue}}" ng-model="data.greenValue" min="0" max="255">
+</div>
+
+<output>{{ data.greenValue }}</output>
+
+<div class="slider-container">
+	<input class="blue" type="range" value="{{data.blueValue}}" ng-model="data.blueValue" min="0" max="255">
+</div>
+
+<output>{{ data.blueValue }}</output>
+
+<div class="RGB slider-container" ng-style="bgColor()"></div>
