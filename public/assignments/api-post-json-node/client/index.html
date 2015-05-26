@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Node.js mini app</title>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<script>
+$(function() {
+  $.getJSON('data.json', function(data) {
+  	
+  	$.ajax({
+      type: "POST",
+      //url: "https://scriptfairy-mi9.herokuapp.com/",
+      url: "http://localhost:3000",
+      data: JSON.stringify(data),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      success: function(data) {
+      		console.log('success');
+      },
+      error: function(err) {
+          console.log(err);
+      }
+  	});
+  
+  });
+});
+</script>
+
+</body>
+
+</html>
